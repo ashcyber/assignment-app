@@ -52,14 +52,14 @@ const upload = multer({
 
 
 const predictName = (powertrain, wheels, frame_material) => {
-    if(powertrain === 'human'){
+    if(powertrain.toLowerCase() === 'human'){
         if(frame_material === 'plastic'){
                 return 'big wheel'; 
         }else{
                 return 'bicycle';  
         }
     }
-    else if(powertrain === 'internal combustion'){
+    else if(powertrain.toLowerCase() === 'internal combustion'){
         if(wheels.length == 2){
             return 'motorcycle';
         }
@@ -67,7 +67,7 @@ const predictName = (powertrain, wheels, frame_material) => {
             return 'car'; 
         }
     }
-    else if(powertrain === 'bernoulli'){
+    else if(powertrain.toLowerCase() === 'bernoulli'){
         return 'hang glider'; 
     }
 
