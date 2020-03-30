@@ -1,4 +1,4 @@
-# unfound-app
+# XML Parser
 - cd into root directory and npm install to load server dependencies 
 - cd into frontend and npm install to load react dependencies 
 - hit "node server.js" to start the node server in root folder 
